@@ -1,0 +1,584 @@
+body {
+    background-color: #000;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+.logo-text {
+  color: #e50914;
+  font-weight: 700;
+}
+/* HERO SECTION */
+.hero-section {
+    position: relative;
+    height: 90vh;
+    background: url("images/background.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.9) 0%,
+        rgba(0,0,0,0.0) 60%,
+        rgba(0,0,0,0.7) 100%
+    );
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 1;
+}
+
+.nav {
+    position: relative;
+    z-index: 5;
+}
+/*logo*/
+.logo {
+    position: relative;   
+    z-index: 10;          
+}
+.lang-select {
+    width: 130px;
+    background: rgba(0,0,0,1);
+    color: white;
+    border: 1px solid #aaa;
+    z-index: 10;
+}
+
+.lang-select:hover {
+    color: black;
+}
+.sign-btn {
+    position: relative;   /* REQUIRED */
+    z-index: 10;          /* Higher than overlay */
+    background: #e50914;
+    border: none;
+    color: white;
+    transition: 0.3s;
+}
+.sign-btn1 {
+    position: relative;   /* REQUIRED */
+    z-index: 10;          /* Higher than overlay */
+    border: none;
+    transition: 0.3s;
+}
+
+
+.sign-btn:hover {
+    background: #f6121d;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 75vh;
+    }
+
+    .logo {
+        width: 110px;
+    }
+
+    .lang-select {
+        width: 110px;
+        padding: 4px 6px;
+    }
+
+    .nav {
+        padding: 0 15px;
+    }
+}
+
+.hero-content {
+    position: relative;
+    top: 25%;
+    z-index: 4;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+.hero-content h4 {
+    font-size: 1.2rem;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+}
+
+/* Email Input */
+.email-box {
+    max-width: 350px;
+    padding: 10px 15px;
+    background: rgba(0,0,0,0.6);
+    border: 1px solid #555;
+    color: white;
+}
+
+/* Get Started Button */
+.get-started-btn {
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: red;
+    color:white;
+}
+.get-started-btn:hover
+{
+    color:white;
+}
+.sign-btn
+{
+    color:white;
+    background-color: red;
+    z-index: 1;
+}
+.sign-btn a
+{
+    color:white;
+    text-decoration: none;
+}
+/* Language Selector Box */
+.language-box {
+    position: relative;
+    background: rgba(0,0,0,0.6);
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    width: 100px;
+    padding: 4px 8px;
+    display: flex;
+
+    cursor: pointer;
+}
+
+/* Remove default select arrow */
+.lang-select {
+    background: transparent;
+    border: none;
+    color: white;
+    padding-left: 5px;
+    appearance: none;
+    cursor: pointer;
+}
+.lang-select:active
+.lang-select:focus {
+    box-shadow: 1px 1px 2px 5px white;
+}
+
+/* Netflix globe icon */
+.globe-icon {
+    color: white;
+    font-size: 18px;
+}
+
+/* Custom dropdown arrow (down chevron) */
+.arrow-icon {
+    position: absolute;
+    right: 8px;
+    color: black;
+    font-size: 20px;
+    pointer-events: none;
+}
+body {
+    background: #000;
+}
+/*Trending*/
+body {
+    background: #000;
+}
+
+/* Slider container */
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* Left + Right Buttons */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    width: 40px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.slider-btn:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.left-btn {
+    left: 0;
+    margin-right: 20px;
+}
+
+.right-btn {
+    right: 0;
+}
+
+/* Slider*/
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 18px;
+    padding: 5px;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.movie-item {
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.movie-item img {
+    width: 170px;
+    height: 240px;
+    border-radius: 6px;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+}
+
+.movie-item:hover img {
+    transform: scale(1.08);
+}
+
+/* Ranking Numbers */
+.rank {
+    position: absolute;
+    bottom: -20px;
+    left: 15px;
+    font-size: 85px;
+    font-weight: 900;
+    color: black;
+    -webkit-text-stroke: 2px white;
+    z-index: 5;
+    pointer-events: none;
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+    .movie-item img {
+        width: 150px;
+        height: 220px;
+    }
+    .rank {
+        font-size: 65px;
+        bottom: -15px;
+    }
+    .slider-btn {
+        height: 100px;
+        width: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .movie-item img {
+        width: 130px;
+        height: 190px;
+    }
+    .rank {
+        font-size: 55px;
+        -webkit-text-stroke: 2px black;
+    }
+    .slider-btn {
+        height: 90px;
+        width: 32px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .movie-item img {
+        width: 110px;
+        height: 165px;
+    }
+    .rank {
+        font-size: 45px;
+        bottom: -10px;
+    }
+    .slider-btn {
+        height: 80px;
+        width: 28px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .movie-item img {
+        width: 95px;
+        height: 140px;
+    }
+    .rank {
+        font-size: 38px;
+    }
+}
+
+/*More resons*/
+
+.nf-card {
+    background: linear-gradient(135deg, #1a0632, #0a0a1a, #0c0c24);
+    border-radius: 20px;
+    padding: 22px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nf-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.2);
+}
+
+.nf-title {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nf-text {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.nf-icon {
+    width: 55px;
+    align-self: flex-end;
+}
+
+/*faq*/
+.nf-item {
+    margin-bottom: 8px;
+}
+
+.nf-question {
+    width: 100%;
+    background: #2d2d2d;
+    color: white;
+    text-align: left;
+    padding: 22px 60px 22px 25px;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+}
+
+/* + sign */
+.nf-question::after {
+    content: '+';
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 38px;
+    font-weight: 200;
+    color: white;
+    transition: transform 0.1s ease, content 0.3s ease;
+}
+
+.nf-question:not(.collapsed)::after {
+    content: '×';
+    transform: translateY(-50%);
+}
+
+
+.nf-answer {
+    background: #2d2d2d;
+    color: white;
+    overflow: hidden;
+    transition: all 0.33s ease;
+    border-top: 1px solid #000;
+}
+
+.nf-answer-inner {
+    padding: 25px;
+    font-size: 20px;
+    line-height: 1.5;
+    animation: fadeDown 0.33s ease;
+}
+
+/* Fade + slide animation */
+@keyframes fadeDown {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+
+.accordion-button::after {
+    display: none !important;
+}
+
+.email-box1 {
+    max-width: 460px;
+    padding: 10px 15px;
+    background: rgba(0,0,0,0.6);
+    border: 1px solid #555;
+    color: white;
+}
+.get-started-btn1 {
+    padding: 10px 25px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: red;
+    color:white;
+}
+.get-started-btn1:hover
+{
+    color:white;
+}
+/****************************************************************************/
+/*Sign up Page Css*/
+/* Background full screen */
+.login-bg {
+    height: 100vh;
+    width: 100%;
+    background: url("images/background.jpg") center/cover no-repeat;
+    position: relative;
+}
+
+/* Dark overlay */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(1px);
+}
+
+/* Netflix logo */
+.netflix-logo {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 150px;
+    z-index: 10;
+}
+
+/* Login card */
+.login-box {
+    position: relative;
+    z-index: 20;
+    width: 490px;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 60px 50px;
+    border-radius: 4px;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Input boxes */
+.input-box {
+    background:transparent;
+    border: 2px solid white;
+    height: 50px;
+    color: white;
+}
+
+.input-box:focus {
+    background: #444;
+    color: white;
+}
+
+/* Sign in button */
+.login-btn {
+    background: #e50914;
+    color: white;
+    height: 50px;
+    border: none;
+    font-weight: 600;
+}
+.login-btn a{
+    color:white;
+    text-decoration: none;
+}
+.login-btn:hover {
+    background: #f6121d;
+}
+
+/* Sign-in code button */
+.code-btn {
+    background: #333;
+    color: white;
+    height: 50px;
+    border: none;
+}
+
+.code-btn:hover {
+    background: #444;
+}
+
+/* Forgot password */
+.forgot-link {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+/* Sign up */
+.signup-link {
+    color: white;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+/* ReCAPTCHA text */
+.captcha-text {
+    font-size: 0.75rem;
+    color: #8c8c8c;
+    margin-top: 15px;
+}
+
+.learn-more {
+    color: #0071eb;
+    text-decoration: none;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .login-box {
+        width: 90%;
+        padding: 40px 25px;
+    }
+
+    .netflix-logo {
+        width: 120px;
+        left: 20px;
+    }
+}

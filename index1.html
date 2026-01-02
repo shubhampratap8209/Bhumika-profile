@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamflix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italianno&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css" type="text/css"/>
+</head>
+
+<body>
+     
+    <!-- HERO SECTION -->
+    <header class="hero-section">
+
+        <!-- Dark Overlay -->
+        <div class="overlay"></div>
+
+        <!-- Navbar -->
+        <nav class="container d-flex justify-content-between align-items-center py-3">
+            <div >
+                <h3 class="sign-btn1 text-danger">StreamFLIX</h3>
+             <!-- <img src="images/logo.svg"  width="150" alt="logo" class="img-fluid logo"> -->  
+           
+            </div>
+            <div class="d-flex gap-3">
+                <div class="language-box d-flex align-items-center">
+                        <select class="form-select lang-select">
+                            <option selected>English</option>
+                            <option>हिन्दी</option>
+                        </select>
+                </div>
+
+                <button class="btn sign-btn px-4 active"><a href="signup.html">Sign In</a></button>
+            </div>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="hero-content text-center text-white container">
+
+            <h1 class="">Unlimited movies,<br/> shows, and more</h1>
+            <h4 class="fw-semibold mt-2">Starts at ₹149. Cancel at any time.</h4>
+            <p class="mt-3">Ready to watch? Enter your email to create or restart your membership.</p>
+
+            <div class="d-flex justify-content-center mt-3 flex-wrap gap-2">
+                <input type="text" placeholder="text" class="form-control email-box" name="demo"required>
+                <button class="btn get-started-btn" type="submit">Get Started ></button>
+            </div>
+
+        </div>
+    </header>
+<!--Trending Now-->
+<section class="trending-section container py-4 mt-5">
+    <h3 class="text-white fw-bold mb-3">Trending Now</h3>
+
+    <div class="slider-wrapper position-relative">
+
+        <!-- Left Arrow -->
+        <button class="slider-btn left-btn rounded-pill">
+            <span>&lt;</span>
+        </button>
+
+        <!-- Slider Items -->
+        <div class="slider d-flex overflow-hidden ms-5">
+            <div class="movie-item">
+                <span class="rank">1</span>
+                <img src="images/stranger.jfif" alt="" class="img-fluid ms-3">
+            </div>
+
+            <div class="movie-item">
+                <span class="rank">2</span>
+                <img src="images/dude.webp" alt="" class="img-fluid ms-3">
+            </div>
+
+            <div class="movie-item">
+                <span class="rank">3</span>
+                <img src="images/jolly.jfif" alt="" class="img-fluid ms-3">
+            </div>
+
+            <div class="movie-item">
+                <span class="rank">4</span>
+                <img src="images/delhi.jpg" alt="" class="img-fluid ms-3">
+            </div>
+
+            <div class="movie-item">
+                <span class="rank">5</span>
+                <img src="images/idli.jpg" alt="" class="img-fluid ms-3">
+            </div>
+
+            <div class="movie-item">
+                <span class="rank">6</span>
+                <img src="images/bison.webp" alt="" class="img-fluid ms-3">
+            </div>
+
+            <div class="movie-item">
+                <span class="rank">7</span>
+                <img src="images/sunny.jpg" alt="" class="img-fluid ms-3">
+            </div>
+
+            <div class="movie-item">
+                <span class="rank">8</span>
+                <img src="images/saiyara.jpg" alt="" class="img-fluid ms-3">
+            </div>
+
+            <div class="movie-item">
+                <span class="rank">9</span>
+                <img src="images/kurukshetra.jpg" alt="" class="img-fluid ms-3">
+            </div>
+
+            <div class="movie-item">
+                <span class="rank">10</span>
+                <img src="images/og.jfif" alt="" class="img-fluid ms-3">
+            </div>
+
+        </div>
+
+        <!-- Right Arrow -->
+        <button class="slider-btn right-btn rounded-pill ms-5">
+            <span>&gt;</span>
+        </button>
+
+    </div>
+</section>
+
+<!--More Reasons to Join-->
+<div class="container my-5">
+    <h3 class="text-white mb-4 fw-bold">More reasons to join</h3>
+
+    <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="nf-card">
+                <h5 class="nf-title">Enjoy on your TV</h5>
+                <p class="nf-text">
+                    Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="nf-card">
+                <h5 class="nf-title">Download your shows to watch offline</h5>
+                <p class="nf-text">
+                    Save your favourites easily and always have something to watch.
+                </p>
+                
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="nf-card">
+                <h5 class="nf-title">Watch everywhere</h5>
+                <p class="nf-text">
+                    Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+                </p>
+                
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="nf-card">
+                <h5 class="nf-title">Create profiles for kids</h5>
+                <p class="nf-text">
+                    Send kids on adventures with their favourite characters in a space made just for them.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--FAQ section-->
+<div class="container my-5">
+    <h2 class="text-white mb-4 fw-bold">Frequently Asked Questions</h2>
+
+    <div class="nf-accordion">
+
+        <!-- FAQ 1 -->
+        <div class="nf-item">
+            <button class="nf-question collapsed" data-bs-toggle="collapse" data-bs-target="#faq1">
+                What is Streamflix?
+            </button>
+
+            <div id="faq1" class="collapse nf-answer">
+                <div class="nf-answer-inner">
+                    <p>
+                        Streamflix is a streaming service that offers a wide variety of award-winning TV shows,
+                        movies, anime, documentaries and more — on thousands of internet-connected devices.
+                    </p>
+                    <p>
+                        You can watch as much as you want, whenever you want — without ads, for one low monthly price.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="nf-item">
+            <button class="nf-question collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+                How much does Streamflix cost?
+            </button>
+
+            <div id="faq2" class="collapse nf-answer">
+                <div class="nf-answer-inner">
+                    <p>Watch Streamflix on your smartphone, tablet, Smart TV, laptop, or streaming device — all for one fixed monthly fee.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="nf-item">
+            <button class="nf-question collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
+                Where can I watch?
+            </button>
+
+            <div id="faq3" class="collapse nf-answer">
+                <div class="nf-answer-inner">
+                    <p>Watch anywhere — at home or on the go. Stream unlimited movies and TV shows on your devices.</p>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ 4-->
+        <div class="nf-item">
+            <button class="nf-question collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">
+                How do I cancel?
+            </button>
+
+            <div id="faq4" class="collapse nf-answer">
+                <div class="nf-answer-inner">
+                    <p>Streamflix is flexible. You can easily cancel your account online in two clicks. There are no cancellation fees - start or stop your account anytime.</p>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ 5-->
+        <div class="nf-item">
+            <button class="nf-question collapsed" data-bs-toggle="collapse" data-bs-target="#faq5">
+                What can I watch on Streamflix?
+            </button>
+
+            <div id="faq5" class="collapse nf-answer">
+                <div class="nf-answer-inner">
+                    <p>Streamflix has an extensive library of feature films, documentaries, shows, anime, award-winning Streamflix originals, and more. Watch as much as you want, anytime you want.</p>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ 6-->
+        <div class="nf-item">
+            <button class="nf-question collapsed" data-bs-toggle="collapse" data-bs-target="#faq6">
+                Is Streamflix good for kids?
+            </button>
+
+            <div id="faq6" class="collapse nf-answer">
+                <div class="nf-answer-inner">
+                    <p>The Streamflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.
+                    <br/>
+                    Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don't want kids to see.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Email-->
+<div class="container justify-content-between align-items-center text-white">
+    <p class="text-center">Ready to watch? Enter your email to create or restart your membership.</p>
+    <div class="d-flex justify-content-center mt-3 flex-wrap gap-2">
+                <input type="email" placeholder="Email address" class="form-control email-box1">
+                <button class="btn get-started-btn1">Get Started ></button>
+    </div>
+    <p class="mt-lg-5">Questions? Call 000-800-919-1743</p>
+
+<!--Footer-->
+<div class="conatiner">
+    <div class="row">
+        <div class="col-xl-3 col-md-6">
+            <ul class="list-unstyled p-2">
+                <li class="pt-2">FAQ</li>
+                <li class="pt-2">Investor Relations</li>
+                <li class="pt-2">Privacy</li>
+                <li class="pt-2">Speed Test</li>
+            </ul>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <ul class="list-unstyled">
+                <li class="pt-2">Help Centre</li>
+                <li class="pt-2">Jobs</li>
+                <li class="pt-2">Cookie Preferences</li>
+                <li class="pt-2">Legal Notices</li>
+            </ul>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <ul class="list-unstyled">
+                <li class="pt-2">Account</li>
+                <li class="pt-2">Ways to Watch</li>
+                <li class="pt-2">Corporate Information</li>
+                <li class="pt-2">Only on Streamflix</li>
+            </ul>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <ul class="list-unstyled">
+                <li class="pt-2">Media Centre</li>
+                <li class="pt-2">Terms of Use</li>
+                <li class="pt-2">Contact us</li>
+            </ul>
+        </div>
+    </div>
+    <div class="language-box d-flex align-items-center">
+        <select class="form-select lang-select dropdown-toggle">
+            <option selected>English</option>
+            <option>हिन्दी</option>
+        </select>
+    </div><br/>
+    <p>Streamflix India</p><br/>
+    <p class="text-muted">This page is protected by Google reCAPTCHA to ensure you're not a bot <a href="#">Learn More</a></p>
+    <p class="text-muted">This website is a frontend UI clone created for educational purposes only.
+No real data is collected.</p>
+</div>
+</div>
+<script>
+document.querySelector(".left-btn").addEventListener("click", () => {
+    document.querySelector(".slider").scrollBy({
+        left: -300,
+        behavior: "smooth"
+    });
+});
+
+document.querySelector(".right-btn").addEventListener("click", () => {
+    document.querySelector(".slider").scrollBy({
+        left: 300,
+        behavior: "smooth"
+    });
+});
+</script>
+
+</body>
+</html>
